@@ -1,0 +1,50 @@
+{
+  "playlists": [
+    {
+      "id": "PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y",
+      "subject": "Databases",
+      "name": "DBMS Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+      "subject": "Computer Networks",
+      "name": "Computer Networks Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa",
+      "subject": "Algorithms",
+      "name": "Design and Analysis of Algorithms"
+    },
+    {
+      "id": "PLxCzCOWd7aiFM9Lj5G9G_76adtyb4ef7i",
+      "subject": "Theory of Computation",
+      "name": "TOC Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiGmXg4NoX6R31AsC5LeCPHe",
+      "subject": "Digital Logic",
+      "name": "Digital Logic Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p",
+      "subject": "Operating Systems",
+      "name": "Operating System Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiEKtKSIHYusizkESC42diyc",
+      "subject": "Compiler Design",
+      "name": "Compiler Design Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX",
+      "subject": "Computer Organization and Architecture",
+      "name": "COA Complete Playlist"
+    },
+    {
+      "id": "PLxCzCOWd7aiH2wwES9vPWsEL6ipTaUSl3",
+      "subject": "Engineering Mathematics",
+      "name": "Discrete Mathematics"
+    }
+  ],
+  "videos": []
+}
