@@ -1,0 +1,287 @@
+
+Puter.js Docs
+Search
+ 
+K
+36.9K
+Open playground
+Download AI Prompt
+Overview
+Getting Started
+
+Supported Platforms
+
+Security and Permissions
+
+User-Pays Model
+
+Examples
+
+
+AI
+chat()
+
+txt2img()
+
+img2txt()
+
+txt2speech()
+
+
+Apps
+create()
+
+list()
+
+delete()
+
+update()
+
+get()
+
+
+Auth
+signIn()
+
+signOut()
+
+isSignedIn()
+
+getUser()
+
+
+Cloud Storage
+write()
+
+read()
+
+mkdir()
+
+readdir()
+
+rename()
+
+copy()
+
+move()
+
+stat()
+
+delete()
+
+getReadURL()
+
+upload()
+
+
+Serverless Workers
+router
+
+create()
+
+delete()
+
+list()
+
+get()
+
+exec()
+
+
+Hosting
+create()
+
+list()
+
+delete()
+
+update()
+
+get()
+
+
+Key-Value Store
+set()
+
+get()
+
+incr()
+
+decr()
+
+del()
+
+list()
+
+flush()
+
+
+Networking
+Socket
+
+TLSSocket
+
+fetch()
+
+
+UI
+authenticateWithPuter()
+
+alert()GUI
+
+contextMenu()GUI
+
+createWindow()GUI
+
+exit()GUI
+
+getLanguage()
+
+hideWindow()GUI
+
+launchApp()GUI
+
+on()GUI
+
+onLaunchedWithItems()GUI
+
+onWindowClose()GUI
+
+parentApp()GUI
+
+prompt()GUI
+
+setMenubar()GUI
+
+setWindowHeight()GUI
+
+setWindowPosition()GUI
+
+setWindowSize()GUI
+
+setWindowTitle()GUI
+
+setWindowWidth()GUI
+
+setWindowX()GUI
+
+setWindowY()GUI
+
+showColorPicker()GUI
+
+showDirectoryPicker()
+
+showFontPicker()GUI
+
+showOpenFilePicker()
+
+showSaveFilePicker()
+
+showWindow()GUI
+
+socialShare()GUI
+
+wasLaunchedWithItems()GUI
+
+Drivers
+call
+
+Utilities
+appID
+
+env
+
+print()
+
+randName()
+
+Objects
+AppConnection
+
+App
+
+FSItem
+
+Subdomain
+
+Copy page
+Puter.js
+Puter.js brings free, serverless, Cloud and AI directly to your frontend JavaScript with no backend code or API keys required. Just include a single <script> tag in your HTML file and you can instantly use file storage, databases, Claude, GPT, Gemini, and more right from your frontend code.
+
+https://super-magical-website.com
+OpenAI
+Cloud Storage
+Claude
+Gemini
+NoSQL
+<script src="https://js.puter.com/v2/"></script>
+
+Publish Web Pages
+Auth
+OCR
+Networking
+Text to Speech
+Additionally, with Puter.js, you as the developer pay nothing since each user of your app covers their own Cloud and AI usage. Whether your app has 1 user or 1 million users, it costs you zero to run. Puter.js gives you infinitely scalable infrastructure, completely free.
+
+Puter.js is powered by Puter, the open-source cloud operating system with a heavy focus on privacy. Puter does not use tracking technologies and does not monetize or even collect personal information.
+
+Examples
+Chat with GPT-5 nano
+<html>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        // Chat with GPT-5 nano
+        puter.ai.chat(`What is life?`, { model: "gpt-5-nano" }).then(puter.print);
+    </script>
+</body>
+</html>
+Image Analysis
+
+<html>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <img src="https://assets.puter.site/doge.jpeg" style="display:block;">
+    <script>
+        puter.ai
+            .chat(`What do you see?`, `https://assets.puter.site/doge.jpeg`, {
+                model: "gpt-5-nano",
+            })
+            .then(puter.print);
+    </script>
+</body>
+</html>
+Generate an image of a cat using AI
+
+<html>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        // Generate an image of a cat using the default model and quality. Please note that testMode is set to true so that you can test this code without using up API credits.
+        puter.ai.txt2img('A picture of a cat.', true).then((image)=>{
+            document.body.appendChild(image);
+        });
+    </script>
+</body>
+</html>
+Stream the response
+
+<html>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+    (async () => {
+        const resp = await puter.ai.chat('Tell me in detail what Rick and Morty is all about.', {model: 'claude', stream: true });
+        for await ( const part of resp ) puter.print(part?.text?.replaceAll('\n', '<br>'));
+    })();
+    </script>
+</body>
+</html>
+NEXT
+
+Getting Started
+
+Puter.com•hey@puter.com•Discord•X (Twitter)•GitHub•Reddit•llms.txt© 2025 Puter Technologies Inc.
+On this page
+Puter.js
+Examples
